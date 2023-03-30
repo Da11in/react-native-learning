@@ -1,0 +1,31 @@
+enum FirebaseErrorsEnum {
+  CREDENTIAL_ALREADY_IN_USE = "auth/credential-already-in-use",
+  CREDENTIAL_TOO_OLD_LOGIN_AGAIN = "auth/requires-recent-login",
+  EMAIL_EXISTS = "auth/email-already-in-use",
+  INTERNAL_ERROR = "auth/internal-error",
+  INVALID_AUTH = "auth/invalid-user-token",
+  INVALID_EMAIL = "auth/invalid-email",
+  INVALID_PASSWORD = "auth/wrong-password",
+  NETWORK_REQUEST_FAILED = "auth/network-request-failed",
+  TIMEOUT = "auth/timeout",
+  TOKEN_EXPIRED = "auth/user-token-expired",
+  TOO_MANY_ATTEMPTS_TRY_LATER = "auth/too-many-requests",
+  USER_DELETED = "auth/user-not-found",
+  WEAK_PASSWORD = "auth/weak-password",
+}
+
+export const FirebaseErrors: { [key in FirebaseErrorsEnum]: string } = {
+  [FirebaseErrorsEnum.CREDENTIAL_ALREADY_IN_USE]: "Invalid credentials",
+  [FirebaseErrorsEnum.CREDENTIAL_TOO_OLD_LOGIN_AGAIN]: "Login again",
+  [FirebaseErrorsEnum.EMAIL_EXISTS]: "Please try another email",
+  [FirebaseErrorsEnum.INTERNAL_ERROR]: "Internal server error",
+  [FirebaseErrorsEnum.INVALID_AUTH]: "Invalid credentials",
+  [FirebaseErrorsEnum.INVALID_EMAIL]: "Invalid credentials",
+  [FirebaseErrorsEnum.INVALID_PASSWORD]: "Invalid credentials",
+  [FirebaseErrorsEnum.NETWORK_REQUEST_FAILED]: "Internet connection error",
+  [FirebaseErrorsEnum.TIMEOUT]: "Timeout error",
+  [FirebaseErrorsEnum.TOKEN_EXPIRED]: "Token expired",
+  [FirebaseErrorsEnum.TOO_MANY_ATTEMPTS_TRY_LATER]: "Too many attempts, try later",
+  [FirebaseErrorsEnum.USER_DELETED]: "Invalid credentials",
+  [FirebaseErrorsEnum.WEAK_PASSWORD]: "Weak password",
+};
