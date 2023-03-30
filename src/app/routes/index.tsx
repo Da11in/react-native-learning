@@ -30,7 +30,7 @@ export const AuthNavigator = () => (
 );
 
 export const MainNavigator = () => (
-  <MainStack.Navigator>
+  <MainStack.Navigator screenOptions={{ headerShown: false }}>
     <MainStack.Screen name="Home" component={Home} />
   </MainStack.Navigator>
 );

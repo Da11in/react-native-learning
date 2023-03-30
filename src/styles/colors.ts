@@ -6,4 +6,5 @@ export const colors = {
   border: "#525252",
   warn: "#FC9E4F",
   error: "#FF675C",
+  surface: "#eee",
 };
